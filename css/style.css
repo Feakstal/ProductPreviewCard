@@ -110,8 +110,8 @@ body {
 
 .main {
   display: flex;
-  flex-direction: column;
   flex: 1 1 auto;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -125,28 +125,28 @@ body {
 }
 .preview-card-component__content {
   display: flex;
+  overflow: hidden;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
-  overflow: hidden;
 }
 .preview-card-component__image-block img:first-child {
+  height: 428px;
   width: 300px;
-  height: 418px;
 }
 .preview-card-component__image-block img:last-child {
   display: none;
+  height: auto;
   max-width: 100%;
   width: 363px;
-  height: auto;
 }
 .preview-card-component__text-block {
   padding: 0 25px;
 }
 .preview-card-component__title {
-  margin: 0 0 15px 0;
-  text-transform: uppercase;
+  font-size: 10px;
   letter-spacing: 4px;
-  font-size: 12px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
   padding: 30px 0 0 0;
 }
 .preview-card-component__name {
@@ -155,17 +155,17 @@ body {
 }
 .preview-card-component__name h1 {
   color: hsl(212deg, 21%, 14%);
-  font-size: 30px;
   font-family: "Fraunces", serif;
+  font-size: 32px;
   font-weight: 700;
 }
 .preview-card-component__paragraph {
-  max-width: 250px;
   margin: 0 0 25px 0;
+  max-width: 250px;
 }
 .preview-card-component__paragraph p {
-  word-spacing: 2px;
   line-height: 25px;
+  word-spacing: 2px;
 }
 .preview-card-component__price {
   display: flex;
@@ -183,36 +183,23 @@ body {
   margin: 0 20px 0 0;
 }
 .price_previous {
-  text-decoration: line-through;
-  padding: 8px 0 0 0;
   font-size: 12px;
+  padding: 8px 0 0 0;
+  text-decoration: line-through;
 }
 
-.button__add-to-card {
+.button__add-to-cart {
   border-radius: 5px;
   background-color: hsl(158deg, 36%, 37%);
   color: hsl(0deg, 0%, 100%);
-  max-width: 350px;
-  width: 100%;
-  padding: 15px 0;
   font-weight: 700;
-  position: relative;
+  max-width: 350px;
+  padding: 15px 0;
   transition: all ease 0.2s;
-}
-.button__add-to-card:hover {
-  background-color: hsl(228deg, 12%, 48%);
-}
-.button__add-to-card span {
-  position: relative;
-}
-.button__add-to-card span::before {
-  content: "";
-  top: 0px;
-  left: -25px;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("/images/icon-cart.svg") no-repeat;
+}
+.button__add-to-cart:hover {
+  background-color: hsl(228deg, 12%, 48%);
 }
 
 @media (max-width: 675px) {
